@@ -1,3 +1,4 @@
+//stores data and returns a coppy
 const businesses = [
     {
       purchasingAgent: { nameLast: "Kirlin", nameFirst: "Kristy" },
@@ -110,3 +111,7 @@ const businesses = [
       addressCity: "Watrous"
     }
   ];
+
+  export const useBusiness = () =>{
+      return businesses.slice()
+  }
