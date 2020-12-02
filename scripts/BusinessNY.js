@@ -3,11 +3,11 @@ import { Business } from "/scripts/Business.js"
 
 
 export const NewYorkBusinessList = () =>{
-    const NYArray = useBusiness()
+    const businessArray = useBusiness()
     const contentElement = document.querySelector(".businessList--newYork")
     contentElement.innerHTML= "<h2>New York Businesses</h2>"
 
-    NYArray.forEach(
+    businessArray.forEach(
         (businessObject) =>{
             if(businessObject.addressStateCode === "NY"){
                 return contentElement.innerHTML += Business(businessObject)
@@ -22,3 +22,25 @@ export const NewYorkBusinessList = () =>{
 //         return true
 //     }return false
 //   })
+//.filter()
+
+// const arrayNYState = state.filter(function(state){
+//     if(businessObject[i].addressStateCode === "NY"){
+//         return true;
+//     }
+// });
+
+
+
+// //arrow functions
+// const arrayNY = state.filter(stateCode => stateCode === "NY")
+
+
+
+// //with a for loop
+// let arrayNY = [] 
+// for (let i = 0; i <NYArray.length; i++){
+//     if(businessObject[i].addressStateCode === "NY"){
+//         arrayNY.push(businessObject[i])
+//     }
+// }
