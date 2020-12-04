@@ -1,13 +1,16 @@
 import { useBusiness } from "/scripts/BusinessProvider.js"
 import { Business } from "/scripts/Business.js"
 
-
+//create new array with all of business
+//location on DOM
+//start with headline outside of the loop
+//filter() method function meet condition, 
 export const NewYorkBusinessList = () =>{
     const businessArray = useBusiness()
     const contentElement = document.querySelector(".businessList--newYork")
     contentElement.innerHTML= "<h2>New York Businesses</h2>"
 
-    businessArray.forEach(
+    businessArray.filter(
         (businessObject) =>{
             if(businessObject.addressStateCode === "NY"){
                 return contentElement.innerHTML += Business(businessObject)
@@ -22,19 +25,11 @@ export const NewYorkBusinessList = () =>{
 //         return true
 //     }return false
 //   })
-//.filter()
-
-// const arrayNYState = state.filter(function(state){
-//     if(businessObject[i].addressStateCode === "NY"){
-//         return true;
-//     }
-// });
-
 
 
 // //arrow functions
+// const state = useBusiness()
 // const arrayNY = state.filter(stateCode => stateCode === "NY")
-
 
 
 // //with a for loop
