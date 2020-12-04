@@ -7,7 +7,7 @@ export const NewYorkBusinessList = () =>{
     const contentElement = document.querySelector(".businessList--newYork")
     contentElement.innerHTML= "<h2>New York Businesses</h2>"
 
-    businessArray.forEach(
+    businessArray.filter(
         (businessObject) =>{
             if(businessObject.addressStateCode === "NY"){
                 return contentElement.innerHTML += Business(businessObject)
