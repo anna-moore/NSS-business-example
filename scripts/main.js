@@ -8,6 +8,6 @@ import { ManufacturingBusinessList } from "./Manufacturing.js"
 BusinessList();
 NewYorkBusinessList();
 BusinessSearchFunction();
-ManufacturingBusinessList();
+// ManufacturingBusinessList();
 AgentList();
 AgentSearchFunction();
