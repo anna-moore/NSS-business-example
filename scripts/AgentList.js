@@ -5,6 +5,7 @@ const agentArray = useAgents();
 
 export const AgentList = () => {
   const agentElement = document.querySelector(".agents");
+  agentElement.innerHTML = "<h2>Purchasing Agents</h2>"
   agentArray.forEach((agent) => {
     agentElement.innerHTML += Agent(agent);
   });

@@ -1,5 +1,5 @@
-import { useBusiness } from "/scripts/BusinessProvider.js"
-import { Business } from "/scripts/Business.js"
+import { useBusiness } from "./BusinessProvider.js"
+import { Business } from "./Business.js"
 
 
 const businessArray = useBusiness();
@@ -14,14 +14,15 @@ export const BusinessList = () => {
     );
 };
 
-  export const BusinessSearchFunction = () => {
-    const businessSearchResultArticle = document.querySelector(".foundCompanies");
-  
+  export const BusinessSearch= () => {
+      const businessSearchResultArticle = document.querySelector(".foundCompanies");
+
     document
       .querySelector("#companySearch")
       .addEventListener("keypress", (keyPressEvent) => {
-        if (keyPressEvent.charCode === 13) {
-          const foundCompany = businessArray.find((company) => {
+          if (keyPressEvent.charCode === 13) {
+              const foundCompany = businessArray.find((company) => {
+              console.log(company)
             return company.companyName.includes(keyPressEvent.target.value);
           });
           businessSearchResultArticle.innerHTML = Business(foundCompany);
