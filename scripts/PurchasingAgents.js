@@ -1,6 +1,6 @@
-import { useBusinesses } from "./BusinessProvider.js";
+import { useBusiness } from "./BusinessProvider.js";
 
-const businesses = useBusinesses();
+const businesses = useBusiness();
 const agents = businesses.map((business) => {
   const agent = {
     fullName: `${business.purchasingAgent.nameFirst} ${business.purchasingAgent.nameLast}`,

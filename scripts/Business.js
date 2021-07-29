@@ -9,5 +9,5 @@ export const Business = (businessObject) =>{
         <div class="business_city_state_zipcode">${businessObject.addressCity}, ${businessObject.addressStateCode} ${businessObject.addressZipCode}</div>
         <div class="style">___________________________________________________________</div>
     </section>
-    `
-}
+    `;
+};

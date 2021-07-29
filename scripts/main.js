@@ -1,13 +1,13 @@
 // import { NYBusiness } from "/scripts/BusinessProvider";
-import { AgentList, AgentSearchFunction } from "./AgentList";
-import { BusinessSearchFunction } from "./BusinessList";
-import { BusinessList  } from "/scripts/BusinessList.js";
-import {  NewYorkBusinessList  } from "/scripts/BusinessNY.js";
-import { ManufacturingBusinessList } from "/scripts/Manufacturing.js"
+import { AgentList, AgentSearchFunction } from "./AgentList.js";
+import { BusinessSearchFunction } from "./BusinessList.js";
+import { BusinessList  } from "./BusinessList.js";
+import {  NewYorkBusinessList  } from "./BusinessNY.js";
+import { ManufacturingBusinessList } from "./Manufacturing.js"
 
 BusinessList();
 NewYorkBusinessList();
 BusinessSearchFunction();
 ManufacturingBusinessList();
-AgentList();
+// AgentList();
 AgentSearchFunction();

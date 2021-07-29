@@ -2,18 +2,18 @@ import { useBusiness } from "/scripts/BusinessProvider.js"
 import { Business } from "/scripts/Business.js"
 
 
-const businessArray = useBusiness()
+const businessArray = useBusiness();
 
-export const BusinessList = () =>{
-    const contentElement = document.querySelector(".business_list")
+export const BusinessList = () => {
+    const contentElement = document.querySelector(".business_list");
     contentElement.innerHTML = "<h1>Active Businesses</h1>"
+    console.log(businessArray);
 
-    businessArray.forEach(
-        (businessObject) =>{
+    businessArray.forEach((businessObject) =>{
             contentElement.innerHTML += Business(businessObject)
         }
-    )
-}
+    );
+};
 
 export const NewYorkList = () => {
     const nyElement = document.querySelector(".businessList--newYork");
