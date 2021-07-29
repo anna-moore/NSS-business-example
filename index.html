@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dotard & Simbleton</title>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
-    <main>
 
-        <article class="business_list"></article>
-        <article class="businessList--newYork">
-            <!-- New York businesses go here --->
-        </article>
-        <article class="businessList--manufacturing">
-            <!-- Manufacturing businesses go here --->
-        </article>
+<body>
+    <main class="container">
+
+        <div>
+            <h1>Active Businesses</h1>
+            <article class="business_list"></article>
+        </div>
+
+        <div>
+            <h2>New York Businesses</h2>
+            <article class="businessList--newYork">
+                <!-- New York businesses go here --->
+            </article>
+        </div>
+
+        <!-- <div>
+            <article class="businessList--manufacturing">
+                <!-- Manufacturing businesses go here --->
+            <!-- </article>
+        </div> --> 
+
+        <div>
+            <h2>Company Search</h2>
+            <input type="text" placeholder="Enter company name" id="companySearch" />
+            <article class="foundCompanies"></article>
+        </div>
+
+        <div>
+            <h2>Purchasing Agents</h2>
+            <article class="agents"></article>
+        </div>
+
+        <div>
+            <h2>Agent Search</h2>
+            <input type="text" placeholder="Enter agent name" id="agentSearch" />
+            <article class="foundAgents"></article>
+        </div>
     </main>
     <script type="module" src="./scripts/main.js"></script>
 </body>
+
 </html>
